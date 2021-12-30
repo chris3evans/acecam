@@ -1,0 +1,10 @@
+.products {
+  background-color: $color-dark-green-2;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 8rem;
+    background-color: $color-dark-green-2;
+  }
+}

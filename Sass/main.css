@@ -56,17 +56,19 @@ body {
   font-family: "Playfair Display", serif;
   color: #004a00;
   text-transform: uppercase;
-  font-size: 5.5rem;
+  font-size: 6rem;
 }
 
 .heading-2 {
   font-family: "Playfair Display", serif;
   color: #004a00;
+  font-size: 5.5rem;
 }
 
 .heading-3 {
   font-family: "Playfair Display", serif;
   color: #004a00;
+  font-size: 5rem;
 }
 
 .main-text {
@@ -105,6 +107,49 @@ body {
 
 .pd-top-exlg {
   padding-top: 15rem !important;
+}
+
+.mg-bottom-sm {
+  margin-bottom: 2rem !important;
+}
+
+.mg-bottom-med {
+  margin-bottom: 5rem !important;
+}
+
+.mg-bottom-lg {
+  margin-bottom: 10rem !important;
+}
+
+.mg-bottom-exlg {
+  margin-bottom: 15rem !important;
+}
+
+.mg-top-sm {
+  margin-top: 2rem !important;
+}
+
+.mg-top-med {
+  margin-top: 5rem !important;
+}
+
+.mg-top-lg {
+  margin-top: 10rem !important;
+}
+
+.mg-top-exlg {
+  margin-top: 15rem !important;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.bg-dk-green-2 {
+  background-color: #568056 !important;
 }
 
 .btn {
@@ -166,8 +211,119 @@ body {
           box-shadow: none;
 }
 
+.btn__cta {
+  background-color: #004a00;
+  border-radius: 5rem;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn__cta-icon {
+  fill: #dbf3db;
+  height: 5rem;
+  width: 5rem;
+  padding: 0.7rem;
+}
+
+.btn__cta:hover {
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
+  -webkit-box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.btn__cta:active {
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.product {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (min-content)[2];
+      grid-template-rows: repeat(2, -webkit-min-content);
+      grid-template-rows: repeat(2, min-content);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-row-gap: 2rem;
+}
+
+.product__photo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (35vh)[2];
+      grid-template-rows: repeat(2, 35vh);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product__title-border {
+  border: 0.2rem solid #004a00;
+  border-top-left-radius: 50rem;
+  border-top-right-radius: 50rem;
+  border-bottom: none;
+}
+
+.product__title-background {
+  background-color: #dbf3db;
+  margin: 1rem;
+  height: 100%;
+  border-top-left-radius: 50rem;
+  border-top-right-radius: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__photo-border {
+  border: 0.2rem solid #004a00;
+  border-top: none;
+}
+
+.product__photo-background {
+  background-color: #dbf3db;
+  height: 100%;
+  margin: -1rem 1rem 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__image {
+  width: 100%;
+}
+
+.product__buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (min-content)[2];
+      grid-template-columns: repeat(2, -webkit-min-content);
+      grid-template-columns: repeat(2, min-content);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .row {
-  max-width: 114rem;
+  max-width: 130rem;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -278,5 +434,18 @@ body {
 .hero__image {
   height: 90%;
   width: 90%;
+}
+
+.products {
+  background-color: #568056;
+}
+
+.products__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 8rem;
+  background-color: #568056;
 }
 /*# sourceMappingURL=main.css.map */

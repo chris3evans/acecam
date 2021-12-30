@@ -25,3 +25,43 @@
 .pd-top-exlg {
   padding-top: 15rem !important;
 }
+
+// MARGINS
+
+.mg-bottom-sm {
+  margin-bottom: 2rem !important;
+}
+.mg-bottom-med {
+  margin-bottom: 5rem !important;
+}
+.mg-bottom-lg {
+  margin-bottom: 10rem !important;
+}
+.mg-bottom-exlg {
+  margin-bottom: 15rem !important;
+}
+
+.mg-top-sm {
+  margin-top: 2rem !important;
+}
+.mg-top-med {
+  margin-top: 5rem !important;
+}
+.mg-top-lg {
+  margin-top: 10rem !important;
+}
+.mg-top-exlg {
+  margin-top: 15rem !important;
+}
+
+// LAYOUTS
+
+.flex-column {
+  flex-direction: column !important;
+}
+
+// BACKGROUNDS
+
+.bg-dk-green-2 {
+  background-color: $color-dark-green-2 !important;
+}
