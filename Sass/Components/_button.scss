@@ -1,0 +1,50 @@
+.btn {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  border: 0.2rem $color-dark-green-1 solid;
+  padding: 1.4rem 2rem;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  width: 20rem;
+
+  &-dark {
+    color: $color-light-green-1;
+    background-color: $color-dark-green-1;
+
+    &:hover {
+      color: $color-dark-green-1;
+      background-color: $color-light-green-1;
+      border: none;
+    }
+    &:active {
+      color: $color-light-green-1;
+      background-color: $color-dark-green-1;
+    }
+  }
+
+  &-light {
+    color: $color-dark-green-1;
+    background-color: $color-light-green-1;
+
+    &:hover {
+      color: $color-light-green-1;
+      background-color: $color-dark-green-1;
+    }
+    &:active {
+      color: $color-dark-green-1;
+      background-color: $color-light-green-1;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0rem 1rem 2rem rgba(black, 0.3);
+  }
+  &:active {
+    transform: translateY(0rem);
+    box-shadow: none;
+  }
+}

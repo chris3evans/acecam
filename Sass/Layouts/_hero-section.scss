@@ -1,0 +1,46 @@
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  align-items: center;
+
+  background-color: $color-light-green-1;
+
+  &__left {
+    display: grid;
+    grid-template-columns: 1 1fr;
+    grid-template-rows: repeat(4, min-content);
+    grid-row-gap: 4rem;
+    justify-content: center;
+
+    padding: 2rem;
+  }
+
+  &__btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__right {
+    border: 0.2rem $color-dark-green-1 solid;
+    border-top-left-radius: 50rem;
+    border-bottom-left-radius: 50rem;
+    border-right: none;
+  }
+
+  &__container {
+    background-color: $color-dark-green-2;
+    border-top-left-radius: 50rem;
+    border-bottom-left-radius: 50rem;
+    margin: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    height: 90%;
+    width: 90%;
+  }
+}
