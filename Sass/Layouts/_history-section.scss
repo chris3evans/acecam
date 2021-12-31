@@ -1,0 +1,122 @@
+.history {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, min-content);
+  }
+
+  &__photo {
+    &--1 {
+      grid-column: 1 / 2;
+      grid-row: 1 / 4;
+
+      display: grid;
+      grid-template-rows: repeat(2, 17.5rem);
+    }
+    &--2 {
+      grid-column: 2 / 3;
+      grid-row: 4 / 7;
+      display: grid;
+      grid-template-rows: repeat(2, 17.5rem);
+    }
+    &--3 {
+      grid-column: 3 / 4;
+      grid-row: 1 / 4;
+      display: grid;
+      grid-template-rows: repeat(2, 17.5rem);
+    }
+    &--4 {
+      grid-column: 4 / 5;
+      grid-row: 4 / 7;
+      display: grid;
+      grid-template-rows: repeat(2, 17.5rem);
+    }
+    &--5 {
+      grid-column: 5 / 6;
+      grid-row: 1 / 4;
+      display: grid;
+      grid-template-rows: repeat(2, 17.5rem);
+    }
+  }
+
+  &__text {
+    &--1 {
+      grid-column: 1 / 2;
+      grid-row: 4 / 7;
+
+      display: grid;
+      grid-template-rows: repeat(2, min-content);
+      grid-gap: 2rem;
+    }
+    &--2 {
+      grid-column: 2 / 3;
+      grid-row: 1 / 4;
+    }
+    &--3 {
+      grid-column: 3 / 4;
+      grid-row: 4 / 7;
+
+      display: grid;
+      grid-template-rows: repeat(2, min-content);
+      grid-gap: 2rem;
+    }
+    &--4 {
+      grid-column: 4 / 5;
+      grid-row: 1 / 4;
+    }
+    &--5 {
+      grid-column: 5 / 6;
+      grid-row: 4 / 7;
+
+      display: grid;
+      grid-template-rows: repeat(2, min-content);
+      grid-gap: 2rem;
+    }
+  }
+
+  &__image-background-1,
+  &__image-background-2,
+  &__image-background-3,
+  &__image-background-4,
+  &__image-background-5 {
+    background-color: $color-dark-green-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image-file-1,
+  &__image-file-4,
+  &__image-file-5 {
+    width: 100%;
+  }
+
+  &__image-file-2,
+  &__image-file-3 {
+    width: 75%;
+  }
+
+  &__title-background-1,
+  &__title-background-2,
+  &__title-background-3,
+  &__title-background-4,
+  &__title-background-5 {
+    background-color: $color-dark-green-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title-background-1,
+  &__title-background-3,
+  &__title-background-5 {
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+
+  &__title-background-2,
+  &__title-background-4 {
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+  }
+}
