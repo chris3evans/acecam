@@ -1,11 +1,16 @@
 .history {
+  background-color: $color-light-green-1;
+
   &__container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, min-content);
+    background-color: $color-light-green-1;
   }
 
   &__photo {
+    padding: 2rem;
+
     &--1 {
       grid-column: 1 / 2;
       grid-row: 1 / 4;
@@ -40,6 +45,8 @@
   }
 
   &__text {
+    padding: 2rem;
+
     &--1 {
       grid-column: 1 / 2;
       grid-row: 4 / 7;
