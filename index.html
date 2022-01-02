@@ -19,9 +19,37 @@
   </head>
 
   <body>
-    <div class="navigation">NAVIGATION MENU</div>
+    <div class="navigation">
+      <div class="navigation__title">
+        <svg class="navigation__logo">
+          <use xlink:href="CSS/logo-sprite.svg#Logo"></use>
+        </svg>
 
-    <header class="hero pd-bottom-med pd-top-med">
+        <h4 class="heading-4 navigation__heading">Acecam</h4>
+      </div>
+
+      <div class="navigation__menu">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link navigation-text" href="#">Home</a>
+          </li>
+
+          <li class="navigation__item">
+            <a class="navigation__link navigation-text" href="#">About us</a>
+          </li>
+
+          <li class="navigation__item">
+            <a class="navigation__link navigation-text" href="#">Join us</a>
+          </li>
+
+          <li class="navigation__item">
+            <a class="navigation__link navigation-text" href="#">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <header class="hero pd-bottom-med">
       <div class="hero__left">
         <h1 class="heading-1">Ace camera with the latest equipment</h1>
         <p class="main-text">
@@ -47,9 +75,9 @@
       </div>
     </header>
 
-    <section class="products pd-bottom-med pd-top-med">
+    <section class="products pd-bottom-lg pd-top-lg">
       <div class="row bg-dk-green-2 flex-column">
-        <h2 class="heading-2 mg-bottom-med">Products</h2>
+        <h2 class="heading-2 mg-bottom-lg">Products</h2>
         <div class="products__container">
           <div class="product">
             <div class="product__photo">
@@ -257,7 +285,9 @@
     </section>
 
     <section class="history pd-bottom-med pd-top-med">
-      <div class="row">
+      <div class="row flex-column bg-li-green-1">
+        <h2 class="heading-2 pd-bottom-lg">History</h2>
+
         <div class="history__container">
           <!--HISTORY PHOTO 1-->
           <div class="history__photo history__photo--1">
