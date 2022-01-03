@@ -17,16 +17,28 @@
   &__range {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+
+    @include respond(tab-land) {
+      grid-column: 2 / 3;
+    }
   }
 
   &__lock {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
+
+    @include respond(tab-land) {
+      grid-column: 2 / 3;
+    }
   }
 
   &__lens {
     grid-column: 9 / 10;
     grid-row: 4 / 5;
+
+    @include respond(tab-land) {
+      grid-column: 8 / 9;
+    }
   }
 
   &__zoom {
@@ -37,6 +49,10 @@
   &__exposure {
     grid-column: 9 / 10;
     grid-row: 2 / 3;
+
+    @include respond(tab-land) {
+      grid-column: 8 / 9;
+    }
   }
 
   &__flash {
@@ -50,5 +66,9 @@
 
     display: flex;
     justify-content: center;
+
+    @include respond(tab-land) {
+      grid-column: 3 / 8;
+    }
   }
 }

@@ -36,6 +36,10 @@
 }
 .mg-bottom-lg {
   margin-bottom: 10rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 6rem !important;
+  }
 }
 .mg-bottom-exlg {
   margin-bottom: 15rem !important;

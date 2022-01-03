@@ -6,5 +6,10 @@
     grid-template-columns: repeat(3, minmax(min-content, 1fr));
     grid-gap: 8rem;
     background-color: $color-dark-green-2;
+
+    @include respond(tab-port) {
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(3, minmax(min-content, 1fr));
+    }
   }
 }

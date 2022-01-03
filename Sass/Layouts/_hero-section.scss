@@ -6,6 +6,11 @@
 
   background-color: $color-light-green-1;
 
+  @include respond(tab-port) {
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: 100%;
+  }
+
   &__left {
     display: grid;
     grid-template-columns: 1 1fr;
@@ -14,11 +19,24 @@
     justify-content: center;
 
     padding: 2rem;
+
+    @include respond(tab-port) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+
+      padding: 3rem 5rem 5rem 5rem;
+    }
   }
 
   &__btns {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    @include respond(tab-port) {
+      grid-template-columns: repeat(2, min-content);
+
+      grid-column-gap: 4rem;
+    }
   }
 
   &__right {
@@ -26,6 +44,14 @@
     border-top-left-radius: 50rem;
     border-bottom-left-radius: 50rem;
     border-right: none;
+
+    @include respond(tab-port) {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+
+      border-top-left-radius: 30rem;
+      border-bottom-left-radius: 30rem;
+    }
   }
 
   &__container {
@@ -37,10 +63,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include respond(tab-port) {
+      border-top-left-radius: 30rem;
+      border-bottom-left-radius: 30rem;
+    }
   }
 
   &__image {
     height: 90%;
     width: 90%;
+
+    @include respond(tab-port) {
+      width: 60%;
+      height: 60%;
+    }
+
+    @include respond(tab-land) {
+      width: 50%;
+      height: 50%;
+    }
   }
 }

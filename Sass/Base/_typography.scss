@@ -14,6 +14,10 @@
 
 .heading-2 {
   font-size: 5.5rem;
+
+  @include respond(tab-land) {
+    text-align: center;
+  }
 }
 
 .heading-3 {
@@ -40,6 +44,11 @@
 
 .main-text {
   font-size: 1.6rem;
+
+  @include respond(tab-port) {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
 }
 
 .navigation-text {
@@ -66,6 +75,10 @@
     background-color: $color-light-green-1;
     border: 0.2rem $color-dark-green-1 solid;
     padding: 1.4rem 2rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 1rem;
   }
 }
 
